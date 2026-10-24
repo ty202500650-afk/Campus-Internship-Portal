@@ -9,9 +9,7 @@ function App() {
   const pages = [
     'Home',
     'Jobs & Internships',
-    'My Applications',
-    'Employer',
-    'Admin',
+    
   ];
 
   
@@ -63,7 +61,7 @@ const handleRegister = async (event) => {
   return (
     <>
       <header className="topbar">
-        <div className="brand">CampusLink</div>
+        <div className="brand">InternLink</div>
 
         <nav>
           {pages.map((page) => (
@@ -115,7 +113,7 @@ const handleRegister = async (event) => {
               </div>
             </div>
 
-            <h2>Why Choose CampusLink?</h2>
+            <h2>Why Choose InternLink?</h2>
 
             <div className="feature-grid">
               <div className="feature-card">
@@ -152,7 +150,7 @@ const handleRegister = async (event) => {
   <section className="page active">
     <div className="form-card">
       <h1>Welcome Back!</h1>
-      <p>Log in to your CampusLink account.</p>
+      <p>Log in to your InternLink account.</p>
 
       <form onSubmit={(event) => event.preventDefault()}>
         <label htmlFor="loginEmail">Email Address</label>
@@ -193,7 +191,7 @@ const handleRegister = async (event) => {
   <section className="page active">
     <div className="form-card">
       <h1>Create Your Account</h1>
-      <p>Join CampusLink and discover opportunities.</p>
+      <p>Join InternLink and discover opportunities.</p>
 
       <form onSubmit={handleRegister}>
         
@@ -285,7 +283,7 @@ const handleRegister = async (event) => {
       </main>
 
       <footer>
-        © 2026 CampusLink · Job &amp; Internship Portal for Students
+        © 2026 InternLink Student Job &amp; Internship Portal 
       </footer>
     </>
   );
