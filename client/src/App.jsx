@@ -195,12 +195,13 @@ const handleRegister = async (event) => {
       <h1>Create Your Account</h1>
       <p>Join CampusLink and discover opportunities.</p>
 
-      <form onSubmit={(event) => event.preventDefault()}>
+      <form onSubmit={handleRegister}>
         
 
 <label htmlFor="registerFirstName">First Name</label>
 <input
   id="registerFirstName"
+  name="first_name"
   type="text"
   placeholder="Enter your first name"
   required
@@ -247,8 +248,8 @@ const handleRegister = async (event) => {
           <option value="" disabled>
             Select account type
           </option>
-          <option value="student">Student</option>
-          <option value="employer">Employer</option>
+          <option value="Student">Student</option>
+          <option value="Employer">Employer</option>
         </select>
 
         <button className="btn btn-primary" type="submit">
